@@ -14,7 +14,7 @@ const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const ALLOWED_PROMPTS = [
   "Explain how photosynthesis works in about a paragraph.",
   "Create a study plan for a 30 word vocabulary quiz that I have in 3 days.",
-  "Solve the following equation using completing the square: x^2 + 7x = -12",
+  "Solve the following equation using completing the square: x^2 + 7x + 12 = 0",
   "List the 4 greatest causes of World War I.",
   "Summarize act 1 of Romeo and Juliet without spoiling later acts."
 ];
@@ -70,3 +70,4 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log("Server running at http://localhost:" + PORT);
 });
+
